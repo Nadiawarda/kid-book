@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alphabet Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Alphabets Kids Website</h1>
+    </div>
+
+    <div class="display-area">
+        <div class="letter">
+            <h2 id="letter-display">A </h2>
+        </div>
+        <div class="word">
+            <h2 id="word">for</h2>
+        </div>
+        <div class="words">
+            <h2 id="word-display">Apple</h2>
+        </div>
+    
+        <div class="image">
+            <img id="image-display" src="images/a.jpg" alt="Apple">
+        </div>
+    
+</div>
+    <div class="alphabet-grid">
+        <button class="alphabet-button" onclick="displayLetter('A' ,'Apple', 'a.jpg')">A</button>
+        <button class="alphabet-button" onclick="displayLetter('B', 'Book', 'b.jpg')">B</button>
+        <button class="alphabet-button" onclick="displayLetter('C', 'Cat', 'c.jpg')">C</button>
+        <button class="alphabet-button" onclick="displayLetter('D', 'Dog', 'd.jpg')">D</button>
+        <button class="alphabet-button" onclick="displayLetter('E', 'Elephant', 'e.jpg')">E</button>
+        <button class="alphabet-button" onclick="displayLetter('F', 'Fish', 'f.jpg')">F</button>
+        <button class="alphabet-button" onclick="displayLetter('G', 'Goat', 'g.jpg')">G</button>
+        <button class="alphabet-button" onclick="displayLetter('H', 'Home', 'h.jpg')">H</button>
+        <button class="alphabet-button" onclick="displayLetter('I', 'Ice cream', 'i.jpg')">I</button>
+        <button class="alphabet-button" onclick="displayLetter('J', 'Jug', 'j.jpg')">J</button>
+        <button class="alphabet-button" onclick="displayLetter('K', 'Kite', 'k.jpg')">K</button><br>
+        <button class="alphabet-button" onclick="displayLetter('L', 'Lion', 'l.jpg')">L</button>
+        <button class="alphabet-button" onclick="displayLetter('M', 'Monkey', 'm.jpg')">M</button>
+        <button class="alphabet-button" onclick="displayLetter('N', 'Nest', 'n.jpg')">N</button>
+        <button class="alphabet-button" onclick="displayLetter('O', 'Orange', 'o.jpg')">O</button>
+        <button class="alphabet-button" onclick="displayLetter('P', 'Parrot', 'p.jpg')">P</button>
+        <button class="alphabet-button" onclick="displayLetter('Q', 'Queen', 'q.jpg')">Q</button>
+        <button class="alphabet-button" onclick="displayLetter('R', 'Rose', 'r.jpg')">R</button>
+        <button class="alphabet-button" onclick="displayLetter('S', 'Sparrow', 's.jpg')">S</button>
+        <button class="alphabet-button" onclick="displayLetter('T', 'Tiger', 't.jpg')">T</button>
+        <button class="alphabet-button" onclick="displayLetter('U', 'Umbrella', 'u.jpg')">U</button>
+        <button class="alphabet-button" onclick="displayLetter('V', 'Van', 'v.jpg')">V</button><br>
+        <button class="alphabet-button" onclick="displayLetter('W', 'Wallet', 'w.jpg')">W</button>
+        <button class="alphabet-button" onclick="displayLetter('X', 'Xylophone', 'x.jpg')">X</button>
+        <button class="alphabet-button" onclick="displayLetter('Y', 'Yak', 'y.jpg')">Y</button>
+        <button class="alphabet-button" onclick="displayLetter('Z', 'Zebra', 'z.jpg')">Z</button>
+    </div>
+
+    <script >
+       function displayLetter(letter, word, imageFileName) {
+    document.getElementById('letter-display').textContent = letter;
+    document.getElementById('word-display').textContent = word;
+    document.getElementById('image-display').src = 'images/' + imageFileName;
+    document.getElementById('image-display').alt = word;
+}
+ 
+    </script>
+
+</body>
+</html>

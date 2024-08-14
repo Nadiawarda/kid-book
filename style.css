@@ -1,0 +1,122 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ddc0c0;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #94bceb;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.display-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 40px;
+    gap: 30px;
+    border: none;
+    box-shadow: 2px 2px 10px black;
+    width: 700px;
+    border-radius: 10px;
+}
+
+.letter h2, .word h2, .words h2{
+    color: #779fda;
+    font-size: 50px;
+    display: flex;
+}
+
+.image img {
+    width: 200px;
+    height: 30vh;
+    border-radius: 20%;
+}
+
+.alphabet-grid {
+    display:inline-block;
+    /* grid-template-columns: repeat(5, 2fr); */
+    gap: 2px;
+    justify-items: center;
+    padding: 10px;
+}
+
+.alphabet-button {
+    padding: 10px 10px;
+    margin: 10px 10px;
+    background-color: rgb(37, 167, 190);
+    border: 2px solid #f3ebeb;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 60px;
+    height: 40px;
+    text-transform:capitalize;
+    font-size: 18px;
+}
+
+.alphabet-button:hover, .alphabet-button:focus {
+    background-color: #f3c0f3;
+    color: white;
+    border-color: #a52a2a;
+    outline: none;
+}
+
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .display-area {
+        flex-direction: column;
+    }
+
+    .letter h2, .word h2 {
+        font-size: 36px;
+    }
+
+    .image img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .alphabet-grid {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 15px;
+    }
+
+    .alphabet-button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+/* Media Query for Very Small Screens (Mobile) */
+@media (max-width: 480px) {
+    .display-area {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .letter h2, .word h2 {
+        font-size: 28px;
+    }
+
+    .image img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .alphabet-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .alphabet-button {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
